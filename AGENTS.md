@@ -1048,5 +1048,31 @@ No unnecessary changes
 
 No hidden behavior
 
+## Completion Output
 
+
+
+Keep completion reports short.
+
+
+
+Return only:
+
+
+
+\- Task ID
+
+\- Changed files
+
+\- Checks run
+
+\- Remaining risk
+
+
+
+Do not repeat the task description.
+
+Do not summarize architecture documents.
+
+Do not produce long explanations unless asked.
 
