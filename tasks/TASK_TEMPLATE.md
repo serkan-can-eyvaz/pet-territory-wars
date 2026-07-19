@@ -1,118 +1,35 @@
-\# Task
 
+---
 
+# 3. `TASK_TEMPLATE.md`
+
+Bu dosya ajan tarafından her görevde okunmayacak. Biz yeni task üretirken kullanacağız.
+
+İçeriği:
+
+````markdown
+# TASK-ID — Task Name
 
 Status: TODO
 
+## Goal
 
+## Read
 
-\## Goal
+- AGENTS.md
+- PROJECT_STATUS.md
+- Only the directly relevant architecture documents
 
-Bu görevin amacı.
+Do not read unrelated documentation.
 
+## Do
 
+## Don't
 
-\## Read
+## Done
 
-Kodlamadan önce oku.
+- [ ]
 
-
-
-\- AGENTS.md
-
-\- PROJECT\_STATUS.md
-
-\- İlgili dokümanlar
-
-
-
-\## Todo
-
-
-
-\- \[ ]
-
-\- \[ ]
-
-\- \[ ]
-
-
-
-\## Rules
-
-
-
-\- Scope dışına çıkma.
-
-\- Mimariyi değiştirme.
-
-\- Yeni dependency ekleme (gerekmiyorsa).
-
-\- İlgisiz dosyalara dokunma.
-
-
-
-\## Success
-
-
-
-\- \[ ] Kod tamamlandı
-
-\- \[ ] Testler geçti
-
-\- \[ ] Build başarılı
-
-\- \[ ] PROJECT\_STATUS.md güncellendi
-
-
-
-\## Commands
-
-
+## Commands
 
 ```bash
-
-go test ./...
-
-go build ./...
-
-```
-
-
-
-\## Output
-
-
-
-Görev sonunda sadece şunu döndür:
-
-
-
-```text
-
-Done: <Task ID>
-
-
-
-Changed:
-
-\- file1
-
-\- file2
-
-
-
-Checks:
-
-\- go test ✅
-
-\- go build ✅
-
-
-
-Risk:
-
-\- None
-
-```
-
