@@ -1,8 +1,8 @@
 # Pet Territory Wars — Project Status
 
-Task: M0-003 — Flutter Bootstrap
-Task File: tasks/todo/M0-003-flutter-bootstrap.md
-Next Task: M0-004 — Infrastructure Bootstrap
+Task: M0-004 — Configuration System
+Task File: tasks/todo/M0-004-configuration-system.md
+Next Task: M0-005 — Docker Development Environment
 Branch: main
 Status: In Progress
 
@@ -12,7 +12,7 @@ Status: In Progress
 
 - [x] M0-001 Repository Bootstrap
 - [x] M0-002 Backend Bootstrap
-- [ ] M0-003 Flutter Bootstrap
+- [x] M0-003 Flutter Bootstrap
 - [ ] M0-004 Configuration System
 - [ ] M0-005 Structured Logging
 - [ ] M0-006 PostgreSQL Connection
