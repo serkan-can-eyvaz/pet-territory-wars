@@ -1,17 +1,10 @@
 # Pet Territory Wars — Project Status
 
 ## Current
-
-Milestone: M0 — Repository & Development Environment
-
-Task: M0-001 — Repository Bootstrap
-
-Task File: tasks/todo/M0-001-repository-bootstrap.md
-
-Next Task: M0-002 — Backend Bootstrap
-
+Task: M0-002 — Backend Bootstrap
+Task File: tasks/todo/M0-002-backend-bootstrap.md
+Next Task: M0-003 — Flutter Bootstrap
 Branch: main
-
 Status: Completed
 
 ---
@@ -19,7 +12,7 @@ Status: Completed
 ## Milestone 0
 
 - [x] M0-001 Repository Bootstrap
-- [ ] M0-002 Backend Bootstrap
+- [x] M0-002 Backend Bootstrap
 - [ ] M0-003 Flutter Bootstrap
 - [ ] M0-004 Configuration System
 - [ ] M0-005 Structured Logging
