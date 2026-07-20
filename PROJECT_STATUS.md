@@ -1,10 +1,10 @@
 # Pet Territory Wars — Project Status
 
-Task: M0-007 — Health Endpoints
-Task File: tasks/todo/M0-007-health-endpoints.md
-Next Task: M0-008 — Structured Logging
+Task: M0-008-structured-logging.md
+Task File: tasks/todo/M0-008-structured-logging.md
+Next Task: M0-009 — CI Bootstrap
 Branch: main
-Status: Completed
+Status: In Progress
 
 ---
 
@@ -16,7 +16,7 @@ Status: Completed
 - [x] M0-004 Configuration System
 - [x] M0-005 Structured Logging
 - [X] M0-006 PostgreSQL Connection
-- [ ] M0-007 Health Endpoints
+- [X] M0-007 Health Endpoints
 - [ ] M0-008 Dockerfile
 - [ ] M0-009 Docker Compose
 - [ ] M0-010 Migration System

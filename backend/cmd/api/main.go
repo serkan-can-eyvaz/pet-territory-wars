@@ -11,6 +11,7 @@ import (
 
 	"github.com/serkan-can-eyvaz/pet-territory-wars/backend/internal/infrastructure/config"
 	"github.com/serkan-can-eyvaz/pet-territory-wars/backend/internal/infrastructure/database"
+	"github.com/serkan-can-eyvaz/pet-territory-wars/backend/internal/infrastructure/logging"
 	"github.com/serkan-can-eyvaz/pet-territory-wars/backend/internal/transport/health"
 )
 
@@ -29,6 +30,12 @@ func run(ctx context.Context) error {
 	if err != nil {
 		return fmt.Errorf("load configuration: %w", err)
 	}
+
+	logger, err := logging.New(os.Stdout, "api", configuration.LogLevel)
+	if err != nil {
+		return fmt.Errorf("create logger: %w", err)
+	}
+	logger.Info("api starting")
 
 	pool, err := database.Open(ctx, configuration.DatabaseURL)
 	if err != nil {
