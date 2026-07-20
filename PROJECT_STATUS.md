@@ -1,11 +1,10 @@
 # Pet Territory Wars — Project Status
 
-## Current
-Task: M0-002 — Backend Bootstrap
-Task File: tasks/todo/M0-002-backend-bootstrap.md
-Next Task: M0-003 — Flutter Bootstrap
+Task: M0-003 — Flutter Bootstrap
+Task File: tasks/todo/M0-003-flutter-bootstrap.md
+Next Task: M0-004 — Infrastructure Bootstrap
 Branch: main
-Status: Completed
+Status: In Progress
 
 ---
 
