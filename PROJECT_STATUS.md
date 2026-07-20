@@ -15,7 +15,7 @@ Status: In Progress
 - [x] M0-003 Flutter Bootstrap
 - [x] M0-004 Configuration System
 - [x] M0-005 Structured Logging
-- [ ] M0-006 PostgreSQL Connection
+- [X] M0-006 PostgreSQL Connection
 - [ ] M0-007 Health Endpoints
 - [ ] M0-008 Dockerfile
 - [ ] M0-009 Docker Compose
