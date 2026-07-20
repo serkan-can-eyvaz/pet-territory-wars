@@ -1,9 +1,8 @@
 # Pet Territory Wars — Project Status
 
-Task: M0-009 — CI Bootstrap
-Task File: tasks/todo/M0-009-ci-bootstrap.md
-Next Task: Milestone 1 — Domain Foundation
-Branch: main
+Task: M0-009 — Docker Compose
+Task File: tasks/todo/M0-009-docker-compose.md
+Next Task: M0-010 — Migration System
 Status: In Progress
 
 ---
@@ -17,7 +16,7 @@ Status: In Progress
 - [x] M0-005 Structured Logging
 - [X] M0-006 PostgreSQL Connection
 - [X] M0-007 Health Endpoints
-- [ ] M0-008 Dockerfile
+- [x] M0-008 Dockerfile
 - [ ] M0-009 Docker Compose
 - [ ] M0-010 Migration System
 - [ ] M0-011 Graceful Shutdown
