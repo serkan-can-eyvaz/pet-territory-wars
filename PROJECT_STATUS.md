@@ -12,13 +12,13 @@ Next Task: M0-002 — Backend Bootstrap
 
 Branch: main
 
-Status: In Progress
+Status: Completed
 
 ---
 
 ## Milestone 0
 
-- [ ] M0-001 Repository Bootstrap
+- [x] M0-001 Repository Bootstrap
 - [ ] M0-002 Backend Bootstrap
 - [ ] M0-003 Flutter Bootstrap
 - [ ] M0-004 Configuration System
