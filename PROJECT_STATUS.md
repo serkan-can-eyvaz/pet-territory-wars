@@ -6,7 +6,7 @@ Milestone: M0 — Repository & Development Environment
 
 Task: M0-001 — Repository Bootstrap
 
-Task File: tasks/M0-001-repository-bootstrap.md
+Task File: tasks/todo/M0-001-repository-bootstrap.md
 
 Next Task: M0-002 — Backend Bootstrap
 

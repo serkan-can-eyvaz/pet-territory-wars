@@ -78,25 +78,19 @@ Correctness is more important.
 
 
 
-Before starting ANY task read:
+Before starting any task:
 
 
 
-docs/architecture/project-conventions.md
+1\. Read PROJECT\_STATUS.md.
+
+2\. Read the active task file referenced by PROJECT\_STATUS.md.
+
+3\. Read only the documents listed in the active task file.
 
 
 
-docs/roadmap/mvp-roadmap.md
-
-
-
-Then read ONLY documents related to your task.
-
-
-
-Examples
-
-
+Never scan or read unrelated documents.
 
 Engine task
 
