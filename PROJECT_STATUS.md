@@ -1,8 +1,8 @@
 # Pet Territory Wars — Project Status
 
-Task: M0-005 — Docker Development Environment
-Task File: tasks/todo/M0-005-docker-development-environment.md
-Next Task: M0-006 — CI Bootstrap
+Task: M0-006 — PostgreSQL Connection
+Task File: tasks/todo/M0-006-postgresql-connection.md
+Next Task: M0-007 — Structured Logging
 Branch: main
 Status: In Progress
 
@@ -14,7 +14,7 @@ Status: In Progress
 - [x] M0-002 Backend Bootstrap
 - [x] M0-003 Flutter Bootstrap
 - [x] M0-004 Configuration System
-- [ ] M0-005 Structured Logging
+- [x] M0-005 Structured Logging
 - [ ] M0-006 PostgreSQL Connection
 - [ ] M0-007 Health Endpoints
 - [ ] M0-008 Dockerfile
