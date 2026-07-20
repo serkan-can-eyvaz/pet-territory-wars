@@ -1,8 +1,8 @@
 # Pet Territory Wars — Project Status
 
-Task: M0-008-structured-logging.md
-Task File: tasks/todo/M0-008-structured-logging.md
-Next Task: M0-009 — CI Bootstrap
+Task: M0-009 — CI Bootstrap
+Task File: tasks/todo/M0-009-ci-bootstrap.md
+Next Task: Milestone 1 — Domain Foundation
 Branch: main
 Status: In Progress
 
