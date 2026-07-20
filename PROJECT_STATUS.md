@@ -1,10 +1,10 @@
 # Pet Territory Wars — Project Status
 
-Task: M0-006 — PostgreSQL Connection
-Task File: tasks/todo/M0-006-postgresql-connection.md
-Next Task: M0-007 — Structured Logging
+Task: M0-007 — Health Endpoints
+Task File: tasks/todo/M0-007-health-endpoints.md
+Next Task: M0-008 — Structured Logging
 Branch: main
-Status: In Progress
+Status: Completed
 
 ---
 
