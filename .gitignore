@@ -10,12 +10,14 @@
 # ===========================
 .vscode/
 .idea/
+*.iml
 
 # ===========================
 # OS
 # ===========================
 .DS_Store
 Thumbs.db
+Desktop.ini
 
 # ===========================
 # Logs
@@ -27,11 +29,23 @@ Thumbs.db
 # ===========================
 backend/bin/
 coverage.out
+*.test
+*.prof
 
 # ===========================
 # Flutter
 # ===========================
 mobile/.dart_tool/
 mobile/build/
+mobile/.packages
+mobile/.pub/
+mobile/.pub-cache/
+mobile/.plugin_symlinks/
 mobile/.flutter-plugins
 mobile/.flutter-plugins-dependencies
+
+# ===========================
+# Local temporary files
+# ===========================
+*.tmp
+*.temp
