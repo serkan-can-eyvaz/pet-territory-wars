@@ -1,8 +1,8 @@
 # Pet Territory Wars — Project Status
 
-Task: M0-016 — README
-Task File: tasks/todo/M0-016-readme.md
-Next Task: M0-017 — Environment Validation
+Task: M0-017 — Environment Validation
+Task File: tasks/todo/M0-017-environment-validation.md
+Next Task: M0-018 — Local Installation Verification
 Status: In Progress
 ---
 
@@ -23,7 +23,7 @@ Status: In Progress
 - [x] M0-013 Backend CI
 - [x] M0-014 Flutter CI
 - [x] M0-015 Git Ignore Review
-- [ ] M0-016 README
+- [x] M0-016 README
 - [ ] M0-017 Environment Validation
 - [ ] M0-018 Local Installation Verification
 
