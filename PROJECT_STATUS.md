@@ -1,8 +1,8 @@
 # Pet Territory Wars — Project Status
 
-Task: M0-009 — Docker Compose
-Task File: tasks/todo/M0-009-docker-compose.md
-Next Task: M0-010 — Migration System
+Task: M0-011 — Graceful Shutdown
+Task File: tasks/todo/M0-011-graceful-shutdown.md
+Next Task: M0-012 — Makefile
 Status: In Progress
 
 ---
@@ -17,8 +17,8 @@ Status: In Progress
 - [X] M0-006 PostgreSQL Connection
 - [X] M0-007 Health Endpoints
 - [x] M0-008 Dockerfile
-- [ ] M0-009 Docker Compose
-- [ ] M0-010 Migration System
+- [x] M0-009 Docker Compose
+- [x] M0-010 Migration System
 - [ ] M0-011 Graceful Shutdown
 - [ ] M0-012 Makefile
 - [ ] M0-013 Backend CI
