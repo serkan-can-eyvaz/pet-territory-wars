@@ -1,8 +1,8 @@
 # Pet Territory Wars — Project Status
 
-Task: M0-017 — Environment Validation
-Task File: tasks/todo/M0-017-environment-validation.md
-Next Task: M0-018 — Local Installation Verification
+Task: Milestone 1
+Task File: tasks/todo/M1-001-calculator-engine.md
+Next Task: M1-001 — Calculator Engine
 Status: In Progress
 ---
 
@@ -24,8 +24,8 @@ Status: In Progress
 - [x] M0-014 Flutter CI
 - [x] M0-015 Git Ignore Review
 - [x] M0-016 README
-- [ ] M0-017 Environment Validation
-- [ ] M0-018 Local Installation Verification
+- [x] M0-017 Environment Validation
+- [x] M0-018 Local Installation Verification
 
 ---
 
