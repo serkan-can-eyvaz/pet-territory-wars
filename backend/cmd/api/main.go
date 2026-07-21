@@ -8,6 +8,7 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
+	"time"
 
 	"github.com/serkan-can-eyvaz/pet-territory-wars/backend/internal/infrastructure/config"
 	"github.com/serkan-can-eyvaz/pet-territory-wars/backend/internal/infrastructure/database"
@@ -53,6 +54,10 @@ func run(ctx context.Context) error {
 		WriteTimeout: configuration.HTTPWriteTimeout,
 	}
 
+	return serve(ctx, server, configuration.HTTPShutdownTimeout)
+}
+
+func serve(ctx context.Context, server *http.Server, shutdownTimeout time.Duration) error {
 	serverErrors := make(chan error, 1)
 	go func() {
 		serverErrors <- server.ListenAndServe()
@@ -67,7 +72,7 @@ func run(ctx context.Context) error {
 	case <-ctx.Done():
 		shutdownCtx, cancel := context.WithTimeout(
 			context.Background(),
-			configuration.HTTPShutdownTimeout,
+			shutdownTimeout,
 		)
 		defer cancel()
 

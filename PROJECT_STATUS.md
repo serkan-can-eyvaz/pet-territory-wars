@@ -1,8 +1,8 @@
 # Pet Territory Wars — Project Status
 
-Task: M0-011 — Graceful Shutdown
-Task File: tasks/todo/M0-011-graceful-shutdown.md
-Next Task: M0-012 — Makefile
+Task: M0-012 — Makefile
+Task File: tasks/todo/M0-012-makefile.md
+Next Task: M0-013 — Backend CI
 Status: In Progress
 
 ---
@@ -19,7 +19,7 @@ Status: In Progress
 - [x] M0-008 Dockerfile
 - [x] M0-009 Docker Compose
 - [x] M0-010 Migration System
-- [ ] M0-011 Graceful Shutdown
+- [x] M0-011 Graceful Shutdown
 - [ ] M0-012 Makefile
 - [ ] M0-013 Backend CI
 - [ ] M0-014 Flutter CI
