@@ -1,16 +1,18 @@
 .DEFAULT_GOAL := help
 
-.PHONY: help backend-format backend-vet backend-test backend-build backend-check flutter-format flutter-analyze flutter-test flutter-check compose-config compose-up compose-down compose-logs migrate-up migrate-down migrate-version
+.PHONY: help backend-format backend-format-check backend-vet backend-test backend-build backend-check flutter-format flutter-format-check flutter-analyze flutter-test flutter-check compose-config compose-up compose-down compose-logs migrate-up migrate-down migrate-version
 
 help: ## Display available commands.
 	@printf '%s\n' \
 		'Available targets:' \
 		'  backend-format   Format backend Go source files.' \
+		'  backend-format-check  Check backend Go source formatting.' \
 		'  backend-vet      Run backend static checks.' \
 		'  backend-test     Run backend tests.' \
 		'  backend-build    Build backend binaries.' \
 		'  backend-check    Run all backend checks.' \
 		'  flutter-format   Format Flutter source files.' \
+		'  flutter-format-check  Check Flutter source formatting.' \
 		'  flutter-analyze  Analyze Flutter source files.' \
 		'  flutter-test     Run Flutter tests.' \
 		'  flutter-check    Run all Flutter checks.' \
@@ -25,6 +27,9 @@ help: ## Display available commands.
 backend-format: ## Format backend Go source files.
 	cd backend && gofmt -w $$(find . -type f -name '*.go')
 
+backend-format-check: ## Check backend Go source formatting.
+	cd backend && unformatted="$$(gofmt -l $$(find . -type f -name '*.go'))"; if [ -n "$$unformatted" ]; then printf '%s\n' "$$unformatted"; exit 1; fi
+
 backend-vet: ## Run backend static checks.
 	cd backend && go vet ./...
 
@@ -35,13 +40,16 @@ backend-build: ## Build backend binaries.
 	cd backend && go build ./...
 
 backend-check: ## Run all backend checks.
-	@$(MAKE) backend-format
+	@$(MAKE) backend-format-check
 	@$(MAKE) backend-vet
 	@$(MAKE) backend-test
 	@$(MAKE) backend-build
 
 flutter-format: ## Format Flutter source files.
 	cd mobile && dart format .
+
+flutter-format-check: ## Check Flutter source formatting.
+	cd mobile && dart format --output=none --set-exit-if-changed .
 
 flutter-analyze: ## Analyze Flutter source files.
 	cd mobile && flutter analyze
@@ -51,7 +59,7 @@ flutter-test: ## Run Flutter tests.
 
 flutter-check: ## Run all Flutter checks.
 	cd mobile && flutter pub get
-	@$(MAKE) flutter-format
+	@$(MAKE) flutter-format-check
 	@$(MAKE) flutter-analyze
 	@$(MAKE) flutter-test
 

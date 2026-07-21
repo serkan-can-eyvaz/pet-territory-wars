@@ -20,13 +20,35 @@ Pet Territory Wars is an MVP for a location-based territory game. The repository
 
 ## Environment setup
 
-Copy the tracked template before running local services:
+Copy the tracked template before running local services.
+
+PowerShell:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+Unix shells:
 
 ```sh
 cp .env.example .env
 ```
 
-Keep `.env` local and do not commit it. Before running Docker Compose, define `POSTGRES_DB`, `POSTGRES_USER`, and `POSTGRES_PASSWORD` in `.env`; Compose requires these values. Migration commands also require `DATABASE_URL` to be available in the shell environment.
+Keep `.env` local and do not commit it. The template includes safe local values for `POSTGRES_DB`, `POSTGRES_USER`, `POSTGRES_PASSWORD`, and `DATABASE_URL`. Docker Compose reads the PostgreSQL values from `.env`; API and worker containers use the Docker-network hostname `postgres` to reach the database.
+
+The example `DATABASE_URL` is for host-side migration commands and uses `localhost:5433`. Start PostgreSQL before running migrations:
+
+```sh
+docker compose up -d postgres
+```
+
+Before running a migration command, make `DATABASE_URL` from `.env` available in your current shell environment using that shell's normal environment-loading mechanism. Then run:
+
+```sh
+make migrate-up
+make migrate-version
+make migrate-down
+```
 
 ## Development commands
 
@@ -43,14 +65,6 @@ make compose-config
 make compose-up
 make compose-down
 make compose-logs
-```
-
-Apply, inspect, or roll back migrations. `migrate-down` asks for confirmation before rolling back all migrations:
-
-```sh
-make migrate-up
-make migrate-version
-make migrate-down
 ```
 
 ## Validation commands

@@ -87,6 +87,99 @@ func TestLoadUsesEnvironmentValues(t *testing.T) {
 	}
 }
 
+func TestLoadValidatesHTTPTimeouts(t *testing.T) {
+	tests := []struct {
+		name            string
+		readTimeout     string
+		writeTimeout    string
+		shutdownTimeout string
+		errString       string
+	}{
+		{
+			name:            "rejects zero read timeout",
+			readTimeout:     "0s",
+			writeTimeout:    "1s",
+			shutdownTimeout: "1s",
+			errString:       "HTTP_READ_TIMEOUT",
+		},
+		{
+			name:            "rejects negative read timeout",
+			readTimeout:     "-1s",
+			writeTimeout:    "1s",
+			shutdownTimeout: "1s",
+			errString:       "HTTP_READ_TIMEOUT",
+		},
+		{
+			name:            "rejects zero write timeout",
+			readTimeout:     "1s",
+			writeTimeout:    "0s",
+			shutdownTimeout: "1s",
+			errString:       "HTTP_WRITE_TIMEOUT",
+		},
+		{
+			name:            "rejects negative write timeout",
+			readTimeout:     "1s",
+			writeTimeout:    "-1s",
+			shutdownTimeout: "1s",
+			errString:       "HTTP_WRITE_TIMEOUT",
+		},
+		{
+			name:            "rejects zero shutdown timeout",
+			readTimeout:     "1s",
+			writeTimeout:    "1s",
+			shutdownTimeout: "0s",
+			errString:       "HTTP_SHUTDOWN_TIMEOUT",
+		},
+		{
+			name:            "rejects negative shutdown timeout",
+			readTimeout:     "1s",
+			writeTimeout:    "1s",
+			shutdownTimeout: "-1s",
+			errString:       "HTTP_SHUTDOWN_TIMEOUT",
+		},
+		{
+			name:            "accepts positive timeout values",
+			readTimeout:     "1s",
+			writeTimeout:    "2s",
+			shutdownTimeout: "3s",
+		},
+	}
+
+	for _, test := range tests {
+		t.Run(test.name, func(t *testing.T) {
+			clearConfigurationEnvironment(t)
+			t.Setenv("DATABASE_URL", "postgres://example")
+			t.Setenv("HTTP_READ_TIMEOUT", test.readTimeout)
+			t.Setenv("HTTP_WRITE_TIMEOUT", test.writeTimeout)
+			t.Setenv("HTTP_SHUTDOWN_TIMEOUT", test.shutdownTimeout)
+
+			config, err := Load()
+			if test.errString != "" {
+				if err == nil {
+					t.Fatal("Load() error = nil, want error")
+				}
+				if !strings.Contains(err.Error(), test.errString) {
+					t.Errorf("Load() error = %q, want error containing %q", err, test.errString)
+				}
+				return
+			}
+
+			if err != nil {
+				t.Fatalf("Load() error = %v", err)
+			}
+			if config.HTTPReadTimeout != time.Second {
+				t.Errorf("HTTPReadTimeout = %s, want %s", config.HTTPReadTimeout, time.Second)
+			}
+			if config.HTTPWriteTimeout != 2*time.Second {
+				t.Errorf("HTTPWriteTimeout = %s, want %s", config.HTTPWriteTimeout, 2*time.Second)
+			}
+			if config.HTTPShutdownTimeout != 3*time.Second {
+				t.Errorf("HTTPShutdownTimeout = %s, want %s", config.HTTPShutdownTimeout, 3*time.Second)
+			}
+		})
+	}
+}
+
 func TestLoadRejectsInvalidConfiguration(t *testing.T) {
 	tests := []struct {
 		name      string

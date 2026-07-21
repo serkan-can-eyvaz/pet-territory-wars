@@ -107,6 +107,18 @@ func (c Config) validate() error {
 		return fmt.Errorf("HTTP_PORT must be between 1 and 65535")
 	}
 
+	if c.HTTPReadTimeout <= 0 {
+		return fmt.Errorf("HTTP_READ_TIMEOUT must be greater than zero")
+	}
+
+	if c.HTTPWriteTimeout <= 0 {
+		return fmt.Errorf("HTTP_WRITE_TIMEOUT must be greater than zero")
+	}
+
+	if c.HTTPShutdownTimeout <= 0 {
+		return fmt.Errorf("HTTP_SHUTDOWN_TIMEOUT must be greater than zero")
+	}
+
 	if c.WalkWorkerConcurrency < 0 {
 		return fmt.Errorf("WALK_WORKER_CONCURRENCY must not be negative")
 	}
