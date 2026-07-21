@@ -50,6 +50,7 @@ flutter-test: ## Run Flutter tests.
 	cd mobile && flutter test
 
 flutter-check: ## Run all Flutter checks.
+	cd mobile && flutter pub get
 	@$(MAKE) flutter-format
 	@$(MAKE) flutter-analyze
 	@$(MAKE) flutter-test

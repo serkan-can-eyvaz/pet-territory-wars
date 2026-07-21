@@ -1,10 +1,9 @@
 # Pet Territory Wars — Project Status
 
-Task: M0-014 — Flutter CI
-Task File: tasks/todo/M0-014-flutter-ci.md
-Next Task: M0-015 — Git Ignore Review
+Task: M0-015 — Git Ignore Review
+Task File: tasks/todo/M0-015-gitignore-review.md
+Next Task: M0-016 — README
 Status: In Progress
-
 ---
 
 ## Milestone 0
@@ -22,7 +21,7 @@ Status: In Progress
 - [x] M0-011 Graceful Shutdown
 - [x] M0-012 Makefile
 - [x] M0-013 Backend CI
-- [ ] M0-014 Flutter CI
+- [x] M0-014 Flutter CI
 - [ ] M0-015 Git Ignore Review
 - [ ] M0-016 README
 - [ ] M0-017 Environment Validation
