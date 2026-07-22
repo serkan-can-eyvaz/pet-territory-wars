@@ -9,8 +9,8 @@ RUN go mod download
 
 COPY . .
 RUN case "$TARGET" in \
-        api|walk-worker|outbox-worker) CGO_ENABLED=0 go build -o /out/app "./cmd/$TARGET" ;; \
-        *) echo "unsupported TARGET: $TARGET (expected api, walk-worker, or outbox-worker)" >&2; exit 1 ;; \
+        api|walk-worker|outbox-worker|simulator) CGO_ENABLED=0 go build -o /out/app "./cmd/$TARGET" ;; \
+        *) echo "unsupported TARGET: $TARGET (expected api, walk-worker, outbox-worker, or simulator)" >&2; exit 1 ;; \
     esac
 
 FROM gcr.io/distroless/static-debian12:nonroot
