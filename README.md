@@ -50,6 +50,17 @@ make migrate-version
 make migrate-down
 ```
 
+## Flutter Environment
+
+The Flutter application selects its environment at compile time with `APP_ENV`.
+Supported values are `development` and `production`; unsupported values fail fast during startup.
+If `APP_ENV` is omitted, the application uses `development`.
+
+```sh
+flutter run --dart-define=APP_ENV=development
+flutter run --dart-define=APP_ENV=production
+```
+
 ## Development commands
 
 Show the available commands:
