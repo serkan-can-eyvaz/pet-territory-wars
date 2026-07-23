@@ -2,7 +2,10 @@ module github.com/serkan-can-eyvaz/pet-territory-wars/backend
 
 go 1.26.5
 
-require github.com/jackc/pgx/v5 v5.10.0
+require (
+	github.com/google/uuid v1.6.0
+	github.com/jackc/pgx/v5 v5.10.0
+)
 
 require (
 	github.com/jackc/pgpassfile v1.0.0 // indirect

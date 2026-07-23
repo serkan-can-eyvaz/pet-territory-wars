@@ -1,8 +1,8 @@
 # Pet Territory Wars — Project Status
 
 Task: Milestone 1
-Task File: tasks/todo/M1-001-calculator-engine.md
-Next Task: M1-001 — Calculator Engine
+Task File: tasks/todo/M1-001-domain-ids.md
+Next Task: M1-002 — RuleSet Model
 Status: In Progress
 ---
 
