@@ -4,7 +4,7 @@ Task: M1-009 - H3 Conversion
 Task File: tasks/todo/M1-009-h3-conversion.md
 Next Task: M1-010 - Hex Visit Aggregation
 
-Status: In Progress
+Status: Completed
 
 ## Milestone 0
 
@@ -39,7 +39,7 @@ Status: In Progress
 - [x] M1-006 Route Segment Calculation
 - [x] M1-007 Walk Validation
 - [x] M1-008 Route Interpolation
-- [ ] M1-009 H3 Adapter
+- [x] M1-009 H3 Adapter
 - [ ] M1-010 Hex Aggregation
 - [ ] M1-011 Territory Decay
 - [ ] M1-012 Empty Capture
