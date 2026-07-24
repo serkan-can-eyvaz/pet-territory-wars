@@ -1,11 +1,10 @@
 # Pet Territory Wars — Project Status
 
-Task: M1-003 - RuleSet Validation
-Task File: tasks/todo/M1-003-ruleset-validation.md
-Next Task: M1-004 - ResolveWalk Input Model
+Task: M1-005 - ResolveWalk Input Model
+Task File: tasks/todo/M1-005-resolvewalk-input-model.md
+Next Task: M1-006 - ResolveWalk Result Model
 
-Status: Completed
----
+Status: In Progress
 
 ## Milestone 0
 
