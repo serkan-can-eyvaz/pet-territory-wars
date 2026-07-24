@@ -4,7 +4,7 @@ Task: M1-005 - ResolveWalk Input Model
 Task File: tasks/todo/M1-005-resolvewalk-input-model.md
 Next Task: M1-006 - ResolveWalk Result Model
 
-Status: In Progress
+Status: Completed
 
 ## Milestone 0
 
@@ -34,7 +34,7 @@ Status: In Progress
 - [X] M1-001 Domain IDs
 - [x] M1-002 RuleSet Model
 - [x] M1-003 RuleSet Validation
-- [ ] M1-004 Engine Input
+- [x] M1-004 Engine Input
 - [ ] M1-005 Engine Result
 - [ ] M1-006 Route Segment Calculation
 - [ ] M1-007 Walk Validation

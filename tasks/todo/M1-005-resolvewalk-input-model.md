@@ -126,17 +126,13 @@ Alanlar:
 
 \- HexID id.HexID
 
-\- OwnerID id.PlayerID
+\- OwnerID \*id.PlayerID
 
-\- Dominance float64
+\- Dominance int
 
 \- LastUpdatedAt time.Time
 
 \- Version int64
-
-
-
-\---
 
 
 
