@@ -4,7 +4,7 @@ Task: M1-017 - Domain Events
 Task File: tasks/todo/M1-017-domain-events.md
 Next Task: M1-018 - ResolveWalk
 
-Status: In Progress
+Status: Completed
 
 
 ## Milestone 0
@@ -48,7 +48,7 @@ Status: In Progress
 - [x] M1-014 Enemy Attack
 - [x] M1-015 Ownership Transfer
 - [x] M1-016 Score Changes
-- [ ] M1-017 Domain Events
+- [x] M1-017 Domain Events
 - [ ] M1-018 ResolveWalk
 - [ ] M1-019 Golden Tests
 - [ ] M1-020 Simulator
