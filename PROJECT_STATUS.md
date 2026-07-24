@@ -1,9 +1,9 @@
 # Pet Territory Wars — Project Status
 
 Task: Milestone 1
-Task File: tasks/todo/M1-001-domain-ids.md
-Next Task: M1-002 — RuleSet Model
-Status: In Progress
+Task File: tasks/todo/M1-002-ruleset-model.md
+Next Task: M1-003 — RuleSet Validation
+Status: Completed
 ---
 
 ## Milestone 0
@@ -31,8 +31,8 @@ Status: In Progress
 
 ## Milestone 1
 
-- [ ] M1-001 Domain IDs
-- [ ] M1-002 RuleSet Model
+- [X] M1-001 Domain IDs
+- [x] M1-002 RuleSet Model
 - [ ] M1-003 RuleSet Validation
 - [ ] M1-004 Engine Input
 - [ ] M1-005 Engine Result
