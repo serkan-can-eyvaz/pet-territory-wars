@@ -1,10 +1,11 @@
 # Pet Territory Wars — Project Status
 
-Task: M1-015 - Ownership Transfer
-Task File: tasks/todo/M1-015-ownership-transfer.md
-Next Task: M1-016 - Score Changes
+Task: M1-017 - Domain Events
+Task File: tasks/todo/M1-017-domain-events.md
+Next Task: M1-018 - ResolveWalk
 
-Status: Completed
+Status: In Progress
+
 
 ## Milestone 0
 
@@ -46,7 +47,7 @@ Status: Completed
 - [x] M1-013 Owner Defense
 - [x] M1-014 Enemy Attack
 - [x] M1-015 Ownership Transfer
-- [ ] M1-016 Score Changes
+- [x] M1-016 Score Changes
 - [ ] M1-017 Domain Events
 - [ ] M1-018 ResolveWalk
 - [ ] M1-019 Golden Tests

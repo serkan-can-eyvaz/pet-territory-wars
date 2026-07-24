@@ -74,6 +74,12 @@ const (
 // ScoreChangeReason is a deterministic explanation code for a score change.
 type ScoreChangeReason string
 
+const (
+	ScoreChangeReasonEmptyCapture      ScoreChangeReason = "EMPTY_CAPTURE"
+	ScoreChangeReasonOwnerDefense      ScoreChangeReason = "OWNER_DEFENSE"
+	ScoreChangeReasonOwnershipTransfer ScoreChangeReason = "OWNERSHIP_TRANSFER"
+)
+
 // ScoreChange carries a score delta for a player.
 type ScoreChange struct {
 	PlayerID id.PlayerID
