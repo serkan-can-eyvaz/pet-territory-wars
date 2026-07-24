@@ -1,8 +1,8 @@
 # Pet Territory Wars — Project Status
 
-Task: M1-005 - Engine Result
-Task File: tasks/todo/M1-005-engine-result.md
-Next Task: M1-006 - Route Segment Calculation
+Task: M1-006 - Route Segment Calculation
+Task File: tasks/todo/M1-006-route-segment-calculation.md
+Next Task: M1-007 - Walk Validation
 
 Status: Completed
 
@@ -36,7 +36,7 @@ Status: Completed
 - [x] M1-003 RuleSet Validation
 - [x] M1-004 Engine Input
 - [x] M1-005 Engine Result
-- [ ] M1-006 Route Segment Calculation
+- [x] M1-006 Route Segment Calculation
 - [ ] M1-007 Walk Validation
 - [ ] M1-008 Route Interpolation
 - [ ] M1-009 H3 Adapter
