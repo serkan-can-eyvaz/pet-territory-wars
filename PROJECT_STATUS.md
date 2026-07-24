@@ -1,8 +1,8 @@
 # Pet Territory Wars — Project Status
 
-Task: M1-011 - Territory Decay
-Task File: tasks/todo/M1-011-territory-decay.md
-Next Task: M1-012 - Territory Resolution
+Task: M1-012 - Empty Capture
+Task File: tasks/todo/M1-012-empty-capture.md
+Next Task: M1-013 - Owner Defense
 
 Status: Completed
 
@@ -42,7 +42,7 @@ Status: Completed
 - [x] M1-009 H3 Adapter
 - [x] M1-010 Hex Aggregation
 - [x] M1-011 Territory Decay
-- [ ] M1-012 Empty Capture
+- [x] M1-012 Empty Capture
 - [ ] M1-013 Owner Defense
 - [ ] M1-014 Enemy Attack
 - [ ] M1-015 Ownership Transfer
