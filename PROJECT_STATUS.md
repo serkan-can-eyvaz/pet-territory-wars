@@ -1,10 +1,10 @@
 # Pet Territory Wars — Project Status
 
-Task: M1-006 - Route Segment Calculation
-Task File: tasks/todo/M1-006-route-segment-calculation.md
-Next Task: M1-007 - Walk Validation
+Task: M1-009 - H3 Conversion
+Task File: tasks/todo/M1-009-h3-conversion.md
+Next Task: M1-010 - Hex Visit Aggregation
 
-Status: Completed
+Status: In Progress
 
 ## Milestone 0
 
@@ -37,8 +37,8 @@ Status: Completed
 - [x] M1-004 Engine Input
 - [x] M1-005 Engine Result
 - [x] M1-006 Route Segment Calculation
-- [ ] M1-007 Walk Validation
-- [ ] M1-008 Route Interpolation
+- [x] M1-007 Walk Validation
+- [x] M1-008 Route Interpolation
 - [ ] M1-009 H3 Adapter
 - [ ] M1-010 Hex Aggregation
 - [ ] M1-011 Territory Decay
