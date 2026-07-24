@@ -1,8 +1,9 @@
 # Pet Territory Wars — Project Status
 
-Task: Milestone 1
-Task File: tasks/todo/M1-002-ruleset-model.md
-Next Task: M1-003 — RuleSet Validation
+Task: M1-003 - RuleSet Validation
+Task File: tasks/todo/M1-003-ruleset-validation.md
+Next Task: M1-004 - ResolveWalk Input Model
+
 Status: Completed
 ---
 
@@ -33,7 +34,7 @@ Status: Completed
 
 - [X] M1-001 Domain IDs
 - [x] M1-002 RuleSet Model
-- [ ] M1-003 RuleSet Validation
+- [x] M1-003 RuleSet Validation
 - [ ] M1-004 Engine Input
 - [ ] M1-005 Engine Result
 - [ ] M1-006 Route Segment Calculation
