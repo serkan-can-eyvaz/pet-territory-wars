@@ -1,8 +1,8 @@
 # Pet Territory Wars — Project Status
 
-Task: M1-006 - HexChange Model
-Task File: tasks/todo/M1-006-hex-change-model.md
-Next Task: M1-007 - ScoreChange Model
+Task: M1-005 - Engine Result
+Task File: tasks/todo/M1-005-engine-result.md
+Next Task: M1-006 - Route Segment Calculation
 
 Status: Completed
 
@@ -35,7 +35,7 @@ Status: Completed
 - [x] M1-002 RuleSet Model
 - [x] M1-003 RuleSet Validation
 - [x] M1-004 Engine Input
-- [ ] M1-005 Engine Result
+- [x] M1-005 Engine Result
 - [ ] M1-006 Route Segment Calculation
 - [ ] M1-007 Walk Validation
 - [ ] M1-008 Route Interpolation
